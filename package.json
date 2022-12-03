@@ -1,0 +1,23 @@
+{
+  "name": "tested_recruters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelDarco/jobInterviewTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelDarco/jobInterviewTest/issues"
+  },
+  "homepage": "https://github.com/AngelDarco/jobInterviewTest#readme",
+  "dependencies": {
+    "typescript": "^4.9.3"
+  }
+}
