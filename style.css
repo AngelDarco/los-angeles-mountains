@@ -1,6 +1,405 @@
+@font-face {
+    font-family: BebasNeue-Regular;
+    src: url(./fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url(./fonts/Lato-Regular.ttf);
+}
+:root{
+    --primary-color: #404f6c;
+    /* --secondary-color: #000; */
+    --text-color: #494747cb;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #555;
+    font-family: BebasNeue-Regular;
+    /* transition: opacity 1s ease; */
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* header */
+header{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    position: absolute;
+    z-index: 100;
+}
+
+header .logo, .links{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* logo header */
+header .logo img{
+    width: 40px;
+    height: 40px;
+}
+
+/* links */
+header .links ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .links ul li{
+    color: #f5f3f3;
+    border-bottom: 1px solid #f5f3f3;
+    font-size: .8rem;
+    width: auto;
+    margin: 0 5%;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+}
+
+
+/* main */
+
+main{
+    width: 100%;
+    /* height: 100vh; */
+}
+
+
+main .main img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 0%;
+   
+}
+
+/* history */
+main .history nav{
+    color: var(--primary-color);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .history nav .logo, .links{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .history nav .logo img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+main .history nav .logo .title{
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+    width: 40%;
+    height: 100%;
+}
+main .history nav .logo .title p:first-child{
+    color: #202020;
+}
+main .history nav .links ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .history nav .links ul li{
+    font-size: .9rem;
+    list-style: none;
+    margin: 0 10px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+/* history main */
+main .history main{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+/* history image */
+main .history main img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -100;
+    object-fit: cover;
+    object-position: 0 50%;
+}
+/* history main text */
+main .history main .text {
+    width: 80%;
+    height: 30%;
+    margin: auto;
+
+}
+main .history main .text .title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;    
+}
+main .history main .text .title h1{
+    color: #697a98;
+    font-size: 9em;
+    display: inline;;
+}
+main .history main .text .subtitle{
+    color: var(--primary-color);
+    width: auto;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+main .history main .text .title .subtitle p{
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .history main .text .title .subtitle .dot{
+    background: #697a98;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+main .history main .text .body{
+    font-family: Lato-Regular;
+    width: 90%;
+    height: fit-content;
+    padding: 0 5%;
+}
+
+/* carousel */
+main .history main .carousel{
+    background-color: #505bbd9d;
+    width: 100%;
+    height: 25vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100;
+}
+/* images container */
+main .history main .carousel div{
+    width: 70%;
+    height: 80%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row nowrap;
+    overflow: hidden;
+}
+
+
+main .history main .carousel div li{
+    min-width: 200px;
+    height: 100%;
+    display: inline-block;
+}
+main .history main .carousel div img{
+    width: 100%;
+    height: 80%;
+    object-fit: scale-down;
+}
+
+/* carousel dots  */
+main .history main .carousel .dots{
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main .history main .carousel .dots span{
+    border-radius: 50%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #a0a0a0;
+}
+
+
+/* Team */
+/* container */
+main .team  {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* title */
+main .team .title{
+    width: 70%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+main .team .title h1{
+    color:#9fa6b6;
+    font-size: 9rem;
+    display: inline;
+}
+main .team .title .subtitle{
+    width: auto;
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 .5rem;
+}
+main .team .title .subtitle .name{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+/* dot */
+main .team .title .subtitle .p{
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #9fa6b6;
+}
+main .team .title .text{
+    font-family: Lato-Regular;
+    color: var(--text-color);
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+}
+
+/* team main container */
+main .team .main {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* team nav */
+main .team .main nav {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .team .main nav a{
+    color: #c2bcbc;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+    height: 100%;
+    text-decoration: none;
+}
+main .team .main nav a:first-child{
+    margin-left: -40%;
+}
+
+main .team .main nav a:focus{
+    background-color: #d4d1d1;
+    color: #373272d2;
+    text-decoration: underline;
+}
+
+/* team main schedule */
+main .team .main main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* team img container */
+main .team .main main img{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: 0 50%;
+    z-index: -100;
+}
+/* schedule container */
+main .team .main main .schedule{
+    margin-left: -30%;
+    background-color: #eeedf2a8;
+    color: var(--text-color);
+    width: 25%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+main .team .main main .schedule h1{
+    width: 70%;
+    text-align: left;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+main .team .main main .schedule .dates{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .team .main main .schedule .dates div{
+    width: 50%;
+    height: 100%;
+}
+
+main .team .main main .schedule .dates div p{
+    font-family: Lato-Regular;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 15%;
+}
+main .team .main main .schedule .dates div p:nth-child(3){
+    padding: 10% 0;
 }
