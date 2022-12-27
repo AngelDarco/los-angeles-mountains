@@ -17,7 +17,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: BebasNeue-Regular;
-    /* transition: opacity 1s ease; */
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    font-display: block;
+}
+
+*::-webkit-scrollbar{
+    display: none;
 }
 
 a{
@@ -143,7 +149,7 @@ main .history main{
     position: relative;
 }
 /* history image */
-main .history main img{
+main .history main .img{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -203,7 +209,7 @@ main .history main .text .body{
 main .history main .carousel{
     background-color: #505bbd9d;
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -212,45 +218,39 @@ main .history main .carousel{
     justify-content: space-around;
     z-index: 100;
 }
-/* images container */
-main .history main .carousel div{
-    width: 70%;
-    height: 80%;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: row nowrap;
-    overflow: hidden;
-}
+
+    .swiper {
+      width: 70%;
+      height: 70%;
+    }
+
+    .swiper-slide {
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 30%;
+      height: 100%;
+      margin-left: 10px;
+      object-fit: cover;
+    }
 
 
-main .history main .carousel div li{
-    min-width: 200px;
-    height: 100%;
-    display: inline-block;
-}
-main .history main .carousel div img{
-    width: 100%;
-    height: 80%;
-    object-fit: scale-down;
-}
 
-/* carousel dots  */
-main .history main .carousel .dots{
-    width: 5%;
-    height: 5%;
-    position: absolute;
-    bottom: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-main .history main .carousel .dots span{
-    border-radius: 50%;
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-color: #a0a0a0;
-}
 
 
 /* Team */
