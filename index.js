@@ -1,1 +1,6 @@
-console.log('Js working ...')
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
+
