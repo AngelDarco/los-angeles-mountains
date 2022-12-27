@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
-    <script src="./index.js" type="module"></script>
-</head>
 
+                  <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script  type="module" src="./index.js" defer></script>
+
+</head>
 <body>
     <header>
         <div class="logo">
@@ -25,7 +29,7 @@
 
     <main>
         <section class="main">
-                <img src="./assets/main.jpg" alt="fondo">
+            <img src="./assets/main.jpg" alt="fondo">
         </section>
 
         <section class="history" id="history">
@@ -39,13 +43,13 @@
                 </div>
                 <div class="links">
                     <ul>
-                        <li>01. HISTORY</li>
+                        <li><a href="#history">01. HISTORY</a></li>
                         <li><a href="#team">02. TEAM</a></li>
                     </ul>
                 </div>
             </nav>
             <main>
-                <img src="./assets/peak.jpg" alt="background">
+                <img class="img" src="./assets/peak.jpg" alt="background">
                 <div class="text">
                     <div class="title">
                         <h1>01</h1>
@@ -61,40 +65,34 @@
                         hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
                     </div>
                 </div>
+
                 <div class="carousel">
-                    <div>
-                        <li>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"> 
                             <img src="./assets/carousel02.jpg" alt="img">
-                        </li>
-                        <li>
                             <img src="./assets/carousel01.jpg" alt="img">
-                        </li>
-                        <li>
                             <img src="./assets/carousel02.jpg" alt="img">
-                        </li>
-                        <li>
                             <img src="./assets/carousel01.jpg" alt="img">
-                        </li>
-                        <li>
-                            <img src="./assets/carousel02.jpg" alt="img">
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="./assets/carousel01.jpg" alt="img">
-                        </li>
-                        <li>
                             <img src="./assets/carousel02.jpg" alt="img">
-                        </li>
-                        <li>
                             <img src="./assets/carousel01.jpg" alt="img">
-                        </li>
-                        <li>
                             <img src="./assets/carousel02.jpg" alt="img">
-                        </li>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./assets/carousel02.jpg" alt="img">
+                            <img src="./assets/carousel01.jpg" alt="img">
+                            <img src="./assets/carousel02.jpg" alt="img">
+                            <img src="./assets/carousel01.jpg" alt="img">
+                          </div>
+                          
+                        </div>
                     </div>
-                    <div class="dots">
-                        <span></span><span></span><span></span>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
+              
             </main>
         </section>
 
@@ -112,10 +110,10 @@
             </div>
             <div class="main">
                 <nav>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a  rel="noopener noreferrer">
                         MOUNTAIN 1
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a  rel="noopener noreferrer">
                         MOUNTAIN 2
                     </a>
                 </nav>
@@ -142,7 +140,6 @@
             </div>
         </section>
     </main>
-
 </body>
 
 </html>
