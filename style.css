@@ -335,7 +335,7 @@ main .team .main nav a:first-child{
     margin-left: -40%;
 }
 
-main .team .main nav a:focus{
+main .team .main nav .clicked{
     background-color: #d4d1d1;
     color: #373272d2;
     text-decoration: underline;
