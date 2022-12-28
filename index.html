@@ -29,7 +29,12 @@
 
     <main>
         <section class="main">
-            <img src="./assets/main.jpg" alt="fondo">
+        <picture>
+            <source media="(max-width: 420px)" srcset="./assets/main420.jpg">
+            <source media="(max-width: 800px)" srcset="./assets/main800.jpg">
+            <img src="./assets/main.jpg" alt="main logo">
+        </picture>
+
         </section>
 
         <section class="history" id="history">
