@@ -255,7 +255,7 @@ main .history main .carousel {
 /* container */
 main .team {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -305,7 +305,7 @@ main .team .title .text {
 /* team main container */
 main .team .main {
     width: 100%;
-    height: 65%;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -401,6 +401,52 @@ main .team .main main .schedule .dates div p {
 }
 main .team .main main .schedule .dates div p:nth-child(3) {
     padding: 10% 0;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+footer::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #404e6ce3;
+}
+
+footer .logo,
+.copyright {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: #404e6c;
+}
+
+footer .logo img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+footer .logo .title {
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+    width: 40%;
+    height: 100%;
 }
 
 /* Querys */
@@ -515,5 +561,17 @@ main .team .main main .schedule .dates div p:nth-child(3) {
                 }
             }
         }
+    }
+}
+
+/* footer */
+@media (max-width: 550px) {
+    footer .logo .title {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    footer .copyright h4 {
+        text-align: center;
+        font-size: 0.8rem;
     }
 }
