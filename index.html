@@ -1,163 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Los Angeles Mountains</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js" defer></script>
+  </head>
 
-</head>
-
-<body>
-    <header>
-        <div class="logo">
-            <img src="./assets/logo.png" alt="logo">
-        </div>
-        <nav class="links">
-            <ul>
-                <li><a href="#history">01. HISTORY</a></li>
-                <li><a href="#team">02. TEAM</a></li>
-            </ul>
-        </nav>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <a href="#main">
+          <img src="./assets/logo.png" alt="logo" />
+        </a>
+      </div>
+      <nav class="links">
+        <ul>
+          <li><a href="#history">01. HISTORY</a></li>
+          <li><a href="#team">02. TEAM</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-        <section class="main">
-            <picture>
-                <source media="(max-width: 420px)" srcset="./assets/main420.jpg">
-                <source media="(max-width: 800px)" srcset="./assets/main800.jpg">
-                <img src="./assets/main.jpg" alt="main logo">
-            </picture>
+    <main id="main">
+      <section class="main">
+        <picture>
+          <source media="(max-width: 420px)" srcset="./assets/main420.jpg" />
+          <source media="(max-width: 800px)" srcset="./assets/main800.jpg" />
+          <img src="./assets/main.jpg" alt="main logo" />
+        </picture>
+      </section>
 
-        </section>
-
-        <section class="history" id="history">
-            <nav class="nav">
-                <div class="logo">
-                    <img src="./assets/logo.png" alt="logo">
-                    <div class="title">
-                        <p>LOS ANGELES</p>
-                        <p>MOUNTAINS</p>
-                    </div>
-                </div>
-                <div class="links">
-                    <ul>
-                        <li><a href="#history">01. HISTORY</a></li>
-                        <li><a href="#team">02. TEAM</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <main>
-                <img class="img" src="./assets/peak.jpg" alt="background">
-                <div class="text">
-                    <div class="title">
-                        <h1>01</h1>
-                        <div class="subtitle">
-                            <p>HISTORY</p>
-                            <p class="dot"></p>
-                        </div>
-                    </div>
-                    <div class="body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat
-                        rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit
-                        tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis
-                        hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
-                    </div>
-                </div>
-
-                <div class="carousel">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./assets/carousel02.jpg" alt="img">
-                                <img src="./assets/carousel01.jpg" alt="img">
-                                <img src="./assets/carousel02.jpg" alt="img">
-                                <img src="./assets/carousel01.jpg" alt="img">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/carousel01.jpg" alt="img">
-                                <img src="./assets/carousel02.jpg" alt="img">
-                                <img src="./assets/carousel01.jpg" alt="img">
-                                <img src="./assets/carousel02.jpg" alt="img">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/carousel02.jpg" alt="img">
-                                <img src="./assets/carousel01.jpg" alt="img">
-                                <img src="./assets/carousel02.jpg" alt="img">
-                                <img src="./assets/carousel01.jpg" alt="img">
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-            </main>
-        </section>
-
-        <section class="team" id="team">
+      <section class="history" id="history">
+        <nav class="nav">
+          <div class="logo">
+            <img src="./assets/logo.png" alt="logo" />
             <div class="title">
-                <h1>02</h1>
-                <div class="subtitle">
-                    <p class="name">CLIMB</p>
-                    <p class="p"></p>
-                </div>
-                <div class="text">
-                    Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique
-                    ut quam. Vivamus suscipit dignissim tortor nec congue.
-                </div>
+              <p>LOS ANGELES</p>
+              <p>MOUNTAINS</p>
             </div>
-            <div class="main">
-                <nav>
-                    <a id="mountain01" class="clicked" href="#mountain01" rel="noopener noreferrer">
-                        MOUNTAIN 1
-                    </a>
-                    <a id="mountain02" href="#mountain02" rel="noopener noreferrer">
-                        MOUNTAIN 2
-                    </a>
-                </nav>
-                <main id="mountains">
-                    <img src="./assets/mountain01.jpg" alt="">
-                    <div class="schedule">
-                        <h1>SCHEDULE</h1>
-                        <div class="dates">
-                            <div class="day">
-                                <p>25 Nov 2016</p>
-                                <p>28 Nov 2016</p>
-                                <p>18 Dec 2016</p>
-                                <p>7 Jan 2017</p>
-                            </div>
-                            <div class="destiny">
-                                <p>Vestibulum viverra</p>
-                                <p>Vestibulum viverra</p>
-                                <p>Vestibulum viverra</p>
-                                <p>Vestibulum viverra</p>
-                            </div>
-                        </div>
-                    </div>
-                </main>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="#history">01. HISTORY</a></li>
+              <li><a href="#team">02. TEAM</a></li>
+            </ul>
+          </div>
+        </nav>
+        <main>
+          <img class="img" src="./assets/peak.jpg" alt="background" />
+          <div class="text">
+            <div class="title">
+              <h1>01</h1>
+              <div class="subtitle">
+                <p>HISTORY</p>
+                <p class="dot"></p>
+              </div>
             </div>
-        </section>
+            <div class="body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
+              ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus
+              est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt
+              quam. Cras scelerisque id quam sed dignissim Pellentesque urna
+              nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus
+              suscipit dignissim tortor nec congue.
+            </div>
+          </div>
+
+          <div class="carousel">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/carousel02.jpg" alt="img" />
+                  <img src="./assets/carousel01.jpg" alt="img" />
+                  <img src="./assets/carousel02.jpg" alt="img" />
+                  <img src="./assets/carousel01.jpg" alt="img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/carousel01.jpg" alt="img" />
+                  <img src="./assets/carousel02.jpg" alt="img" />
+                  <img src="./assets/carousel01.jpg" alt="img" />
+                  <img src="./assets/carousel02.jpg" alt="img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/carousel02.jpg" alt="img" />
+                  <img src="./assets/carousel01.jpg" alt="img" />
+                  <img src="./assets/carousel02.jpg" alt="img" />
+                  <img src="./assets/carousel01.jpg" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </main>
+      </section>
+
+      <section class="team" id="team">
+        <div class="title">
+          <h1>02</h1>
+          <div class="subtitle">
+            <p class="name">CLIMB</p>
+            <p class="p"></p>
+          </div>
+          <div class="text">
+            Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
+            gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit
+            dignissim tortor nec congue.
+          </div>
+        </div>
+        <div class="main">
+          <nav>
+            <a
+              id="mountain01"
+              class="clicked"
+              href="#mountain01"
+              rel="noopener noreferrer"
+            >
+              MOUNTAIN 1
+            </a>
+            <a id="mountain02" href="#mountain02" rel="noopener noreferrer">
+              MOUNTAIN 2
+            </a>
+          </nav>
+          <main id="mountains">
+            <img src="./assets/mountain01.jpg" alt="" />
+            <div class="schedule">
+              <h1>SCHEDULE</h1>
+              <div class="dates">
+                <div class="day">
+                  <p>25 Nov 2016</p>
+                  <p>28 Nov 2016</p>
+                  <p>18 Dec 2016</p>
+                  <p>7 Jan 2017</p>
+                </div>
+                <div class="destiny">
+                  <p>Vestibulum viverra</p>
+                  <p>Vestibulum viverra</p>
+                  <p>Vestibulum viverra</p>
+                  <p>Vestibulum viverra</p>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="logo">
-            <img src="./assets/logo.png" alt="logo">
-            <div class="title">
-                <p>LOS ANGELES</p>
-                <p>MOUNTAINS</p>
-            </div>
+      <div class="logo">
+        <img src="./assets/logo.png" alt="logo" />
+        <div class="title">
+          <p>LOS ANGELES</p>
+          <p>MOUNTAINS</p>
         </div>
-        <div class="copyright">
-            <h4>copyright 2016 all rights reserved</h4>
-        </div>
+      </div>
+      <div class="copyright">
+        <h4>
+          2016 - Developed by <a href="https://darco.vercel.app">Angel GP</a>
+        </h4>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
